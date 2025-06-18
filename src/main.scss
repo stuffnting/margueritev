@@ -1,0 +1,495 @@
+// 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
+@import "../node_modules/bootstrap/scss/functions";
+
+// 2. Include any default variable overrides here
+
+$primary: teal; // teal
+$secondary: grey;
+$success: DarkGreen;
+$info: DeepSkyBlue;
+$warning: gold;
+$danger: Crimson;
+$light: WhiteSmoke;
+$dark: #333;
+
+$text-grey: #555;
+
+$modal-content-color: $text-grey;
+$modal-font-size: 1.2rem;
+
+// 3. Include remainder of required Bootstrap stylesheets
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/variables-dark";
+@import "../node_modules/bootstrap/scss/maps";
+@import "../node_modules/bootstrap/scss/mixins";
+@import "../node_modules/bootstrap/scss/root";
+
+// 4. Include any optional Bootstrap components as you like
+@import "../node_modules/bootstrap/scss/reboot";
+@import "../node_modules/bootstrap/scss/modal";
+@import "../node_modules/bootstrap/scss/close";
+@import "../node_modules/bootstrap/scss/buttons";
+
+// Custom
+
+.bold {
+  font-weight: 700;
+}
+
+a {
+  color: var(--bs-link-color);
+  text-decoration: none;
+  padding: 0.05em;
+  border-bottom: 1px dotted $primary;
+}
+
+.modal-body.info-page-content {
+  font-size: 1rem;
+}
+
+@media only screen and (min-width: 600px) {
+  .modal-body.info-page-content {
+    font-size: 1.2rem;
+  }
+}
+
+/******************************************************************************
+ *
+ * spacers and titles
+ *
+ *****************************************************************************/
+
+.after-banner {
+  height: 8vw;
+  border: 0;
+}
+
+.after-opening-quote {
+  height: 8vw;
+  border: 0;
+}
+
+.after-about-db {
+  border: 0;
+  height: 15vw;
+}
+
+.after-modals {
+  border: 0;
+  height: 7.5rem;
+}
+
+.after-contact,
+.after-specialties {
+  border: 0;
+  height: 7rem;
+}
+
+/******************************************************************************
+ *
+ * Banner
+ *
+ *****************************************************************************/
+.banner {
+  background-image: url("./images/banner-flipped.webp");
+  background-position: 20% center;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page-title,
+.page-subtitle {
+  color: $light;
+  text-shadow: 2px 2px 8px var(--bs-dark);
+}
+
+.page-title {
+  font-size: 3.5rem;
+}
+
+.page-subtitle {
+  font-size: 1.3rem;
+}
+
+@media only screen and (min-width: 1000px) {
+  .banner {
+    height: 100vh;
+  }
+
+  .page-title {
+    font-size: 5rem;
+  }
+
+  .page-subtitle {
+    font-size: 2rem;
+  }
+}
+
+/******************************************************************************
+ *
+ * Opening quote
+ *
+ *****************************************************************************/
+.about-quote {
+  padding: 0 0.75em;
+}
+
+.opening-quote p {
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  font-style: italic;
+  font-weight: 200;
+  text-align: center;
+}
+
+.opening-quote cite {
+  font-size: clamp(1rem, 2vw, 2rem);
+  font-style: normal;
+}
+
+.opening-quote-break {
+  display: initial;
+}
+
+@media screen and (min-width: 720px) {
+  .opening-quote p {
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-style: italic;
+    font-weight: 200;
+    text-align: center;
+  }
+
+  .opening-quote-break {
+    display: none;
+  }
+}
+
+/******************************************************************************
+ *
+ * db CV
+ *
+ *****************************************************************************/
+
+$about-width: 60vh;
+$max-width: 45vw;
+
+.about-db {
+  padding: 0 20px;
+}
+
+.about-sections-wrapper {
+  display: block;
+}
+
+.about-section {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin-bottom: 25vw;
+}
+
+.about-image,
+.about-portrait-photo {
+  width: 80vw;
+}
+
+.about-image {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+}
+
+.about-portrait-photo {
+  height: auto;
+  display: block;
+  aspect-ratio: 1/1;
+  border: clamp(4px, 3vw, 12px) solid teal;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.about-link {
+  color: $light;
+  font-size: clamp(1rem, 6vw, 1.65rem);
+  font-weight: 600;
+  position: absolute;
+  background-color: teal;
+  padding: 0.3em 0.5em 0.5em;
+  top: 90%;
+  line-height: 1.2em;
+  width: fit-content;
+  box-sizing: border-box;
+  display: block;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+@media screen and (min-width: 550px) {
+  .about-sections-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  .about-section {
+    margin-bottom: 0;
+  }
+  .about-image,
+  .about-portrait-photo {
+    width: 60vh;
+    max-width: 45vw;
+  }
+  .about-portrait-photo {
+    border-width: clamp(4px, 1vw, 12px);
+  }
+  .about-link {
+    font-size: clamp(1rem, 3vw, 1.65rem);
+  }
+}
+
+/******************************************************************************
+ *
+ * Specialty boxes
+ *
+ *****************************************************************************/
+
+.specialties {
+  max-width: 700px;
+  padding: 0 5vw;
+  margin: 0 auto;
+}
+
+.writing-title {
+  color: $primary;
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 2em;
+  border-top: 3px dotted $primary;
+  border-bottom: 3px dotted $primary;
+}
+
+.specialty-box {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.specialty-box-bg-img {
+  z-index: -2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  filter: blur(0) grayscale(0) brightness(100%);
+  border-radius: 20px;
+}
+
+.specialty-box:hover .specialty-box-bg-img {
+  filter: blur(2px) grayscale(100%) brightness(70%);
+  transition: all 0.75s ease;
+}
+
+.specialty-box:nth-child(1) .specialty-box-bg-img {
+  background-image: url("./images/non-fiction.webp");
+}
+
+.specialty-box:nth-child(2) .specialty-box-bg-img {
+  background-image: url("./images/fiction.webp");
+}
+
+.specialty-box:nth-child(3) .specialty-box-bg-img {
+  background-image: url("./images/psycho.webp");
+}
+
+.specialty-box-content {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 2em 1em;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
+@media only screen and (min-width: 700px) {
+  .specialties {
+    max-width: 1700px;
+    padding: 0 2vw;
+  }
+
+  .specialties-boxes-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2vw;
+  }
+}
+
+.specialty-box {
+  margin-bottom: 5%;
+}
+
+.specialty-title {
+  color: white;
+  width: 100%;
+  container-type: inline-size;
+  container-name: specialty-title;
+}
+
+@container specialty-title (width > 0px) {
+  .specialty-title h3 {
+    font-size: 12cqw;
+    text-shadow: 2px 2px 8px var(--bs-dark);
+    text-align: center;
+    font-weight: 500;
+    line-height: 1.2;
+  }
+}
+
+/******************************************************************************
+ *
+ * Modals
+ *
+ *****************************************************************************/
+
+.modal-body {
+  font-size: $modal-font-size;
+  color: $modal-content-color;
+}
+
+.modal-body li {
+  margin-bottom: 0.75em;
+}
+
+button [data-bs-toggle="modal"] {
+  font-weight: 700;
+}
+
+.modal-footer button a {
+  color: white;
+  text-decoration: none;
+}
+
+.modal-book-cover {
+  width: 100%;
+  margin: 0 0 2em;
+}
+
+.modal-buy-button {
+  margin: 1em 0;
+}
+
+.book-stats-item {
+  font-weight: 600;
+}
+
+/******************************************************************************
+ *
+ * Contact boxes
+ *
+ *****************************************************************************/
+
+.contact-boxes {
+  padding: 0;
+}
+
+.contact-box-container {
+  padding: 20px;
+}
+
+.contact-box {
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+  background-color: $light;
+  border-radius: 10px;
+  box-shadow: 3px 3px 5px rgb(0 0 0 / 50%);
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact-box p {
+  color: #555;
+  margin-bottom: 0.5rem;
+}
+
+.contact-box-title {
+  font-weight: 200;
+  font-size: 2.4rem;
+  margin-bottom: 20px;
+  color: $primary;
+}
+
+.contact-box-content p {
+  font-weight: 700;
+  font-size: 3.5vw;
+}
+
+@media only screen and (min-width: 802px) {
+  .contact-boxes {
+    padding: 0 20px;
+  }
+
+  .contact-box-container {
+    border-radius: 20px;
+    padding: 20px 3vw 60px;
+    margin: 0 auto;
+    gap: 3vw;
+  }
+
+  .contact-box {
+    width: 40%;
+    min-width: 330px;
+    max-width: 500px;
+  }
+
+  .contact-box-content p {
+    font-size: calc(0.5vw + 10px);
+  }
+}
+
+/******************************************************************************
+ *
+ * Footer
+ *
+ *****************************************************************************/
+
+.index-footer {
+  padding-bottom: 3rem;
+  text-align: center;
+}
+
+.index-footer a {
+  text-decoration: none;
+  border-bottom: none;
+}
+
+.footer-id {
+  font-size: 1.25em;
+}
+
+.photo-credits {
+  margin-bottom: 0;
+  font-weight: 600;
+}
+
+.photo-credits,
+.photo-credits-list {
+  font-size: 0.75em;
+  list-style: none;
+  padding: 0;
+}

@@ -1,0 +1,119 @@
+[
+  {
+    "@context": "http://www.schema.org",
+    "@type": "Person",
+    "name": "Marguerite Valentine",
+    "description": "author",
+    "knowsAbout": "Psychotherapy",
+    "homeLocation": {
+      "@type": "Place",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Bristol",
+        "addressRegion": "Bristol",
+        "addressCountry": "GB"
+      },
+      "url": "https://margueritev.org"
+    }
+  },
+  {
+    "@context": "http://www.schema.org",
+    "@type": "Book",
+    "name": "Talk Therapy: A Radical History for Troubled Times",
+    "author": {
+      "@type": "Person",
+      "name": "Marguerite Valentine",
+      "url": "https://margueritev.org",
+      "sameAs": "https://www.amazon.co.uk/stores/Marguerite-Valentine/author/B00NJRJ7KK"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Sideways On Publishing"
+    },
+    "url": "https://www.amazon.co.uk/Talk-Therapy-Radical-History-Troubled/dp/B0F22D8DZ8/",
+    "image": "https://margueritev.org/images/Talk-Therapy_FRONT.webp",
+    "description": "Talk Therapy: A Radical History for Troubled Times looks at the interrelation between the personal and history. It briefly considers the radical development of psychotherapy, in particular the Arbours Training which was established in London in the early seventies. The book describes the history of Arbours, the training of an Arbours therapist, milieu therapy compared with the traditional one to one, and in a discussion of film how interpretations may also contribute to understanding social and personal problems.",
+    "genre": "Nonfiction",
+    "datePublished": "2025-03-19",
+    "numberOfPages": 225,
+    "inLanguage": "English",
+    "bookFormat": ["http://schema.org/EBook", "http://schema.org/Paperback"],
+    "isbn": ["979-8311253970"],
+    "sameAs": ["https://www.amazon.co.uk/Talk-Therapy-Radical-History-Troubled-ebook/dp/B0F22CVRXQ/"]
+  },
+  {
+    "@context": "http://www.schema.org",
+    "@type": "Book",
+    "name": "Between the Shadow and the Soul",
+    "author": {
+      "@type": "Person",
+      "name": "Marguerite Valentine",
+      "url": "https://margueritev.org",
+      "sameAs": "https://www.amazon.co.uk/stores/Marguerite-Valentine/author/B00NJRJ7KK"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Sideways On Publishing"
+    },
+    "url": "https://www.amazon.co.uk/Between-Shadow-Soul-Marguerite-Valentine-ebook/dp/B072Q66P5X",
+    "image": "https://www.margueritev.org/images/Between-The-Shadow-And-The-Soul_FRONT.webp",
+    "description": "Between the Shadow and the Soul is set in London and Jura, a bleak Hebridean Island. it's about the impact of childhood trauma and tells the story of Flori who in a moment of madness steals a baby. Relying on the love and affection of Rose, her best friend, and Matt her lover, she draws them into her madness, but this faces them with a terrible dilemma.",
+    "genre": "Fiction",
+    "datePublished": "2017-06-02",
+    "numberOfPages": 225,
+    "inLanguage": "English",
+    "bookFormat": ["http://schema.org/EBook", "http://schema.org/Paperback"],
+    "isbn": [],
+    "sameAs": ["https://www.amazon.co.uk/Between-Shadow-Soul-Marguerite-Valentine-ebook/dp/B072Q66P5X"]
+  },
+  {
+    "@context": "http://www.schema.org",
+    "@type": "Book",
+    "name": "Truth and Lies",
+    "author": {
+      "@type": "Person",
+      "name": "Marguerite Valentine",
+      "url": "https://margueritev.org",
+      "sameAs": "https://www.amazon.co.uk/stores/Marguerite-Valentine/author/B00NJRJ7KK"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Sideways On Publishing"
+    },
+    "url": "https://www.amazon.co.uk/Truth-Lies-Marguerite-Valentine/dp/1979363498/",
+    "image": "https://www.margueritev.org/images/Truth-And-Lies_FRONT.webp",
+    "description": "Truth and Lies is a sequel to Between the Shadow and Soul. Based in London, Wales and Greece, it follows through the dilemmas of the characters first encountered in Between the Shadow and Soul. What motivates people to lie and behave the way they do, and can they ever be trusted?",
+    "genre": "Fiction",
+    "datePublished": "2017-12-06",
+    "numberOfPages": 337,
+    "inLanguage": "English",
+    "bookFormat": ["http://schema.org/EBook", "http://schema.org/Paperback"],
+    "isbn": ["978-1979363495"],
+    "sameAs": ["https://www.amazon.co.uk/Truth-Lies-Marguerite-Valentine-ebook/dp/B0789RPS3D"]
+  },
+  {
+    "@context": "http://www.schema.org",
+    "@type": "Book",
+    "name": "My Name is Echo",
+    "author": {
+      "@type": "Person",
+      "name": "Marguerite Valentine",
+      "url": "https://margueritev.org",
+      "sameAs": "https://www.amazon.co.uk/stores/Marguerite-Valentine/author/B00NJRJ7KK"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Sideways On Publishing"
+    },
+    "url": "https://www.amazon.co.uk/My-Name-Echo-Marguerite-Valentine-ebook/dp/B071FX7CHF",
+    "image": "https://www.margueritev.org/images/My-Name-Is-Echo_FRONT.webp",
+    "description": "My name is Echo is told in the style of magical phantasy. Set in Wales and London. It's the story of a feisty young woman with a problematic relationship with her mother. An absent father leaves her open to a wild infatuation with a Welsh poet. But life is never simple, and Echo finds her own unique way of challenging and facing up to life's problems.",
+    "genre": "Fiction",
+    "datePublished": "2017-06-02",
+    "numberOfPages": 225,
+    "inLanguage": "English",
+    "bookFormat": ["http://schema.org/EBook", "http://schema.org/Paperback"],
+    "isbn": [],
+    "sameAs": []
+  }
+]

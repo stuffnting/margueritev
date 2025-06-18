@@ -1,0 +1,28 @@
+{
+  "name": "orchard-street",
+  "version": "1.0.1",
+  "description": "The 2022 website for Orchard Street Law. Updated in March 2023.",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack --config webpack.config.js --watch --env development",
+    "build": "webpack --config webpack.config.js --env production"
+  },
+  "author": "Grover Stones",
+  "license": "ISC",
+  "devDependencies": {
+    "@popperjs/core": "^2.11.8",
+    "bootstrap": "^5.3.6",
+    "copy-webpack-plugin": "^13.0.0",
+    "css-loader": "^7.1.2",
+    "css-minimizer-webpack-plugin": "^7.0.2",
+    "favicons": "^7.2.0",
+    "html-loader": "^5.1.0",
+    "html-webpack-plugin": "^5.6.3",
+    "mini-css-extract-plugin": "^2.9.2",
+    "sass": "^1.89.2",
+    "sass-loader": "^16.0.5",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.99.9",
+    "webpack-cli": "^6.0.1"
+  }
+}

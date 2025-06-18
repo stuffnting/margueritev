@@ -1,0 +1,10 @@
+node_modules
+start
+build
+npm-debug.log
+.git
+.nyc
+.env
+.DS_Store
+.vscode
+package-lock.json
