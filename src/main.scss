@@ -302,7 +302,7 @@ $max-width: 45vw;
 }
 
 .specialty-box:nth-child(1) .specialty-box-bg-img {
-  background-image: url("./images/non-fiction.webp");
+  background-image: url("./images/non-fiction-2.webp");
 }
 
 .specialty-box:nth-child(2) .specialty-box-bg-img {
@@ -365,6 +365,13 @@ $max-width: 45vw;
  * Modals
  *
  *****************************************************************************/
+.modal-dialog {
+  margin-top: 2.5vh;
+}
+
+.modal-dialog-scrollable {
+  height: 95vh;
+}
 
 .modal-body {
   font-size: $modal-font-size;
@@ -385,7 +392,10 @@ button [data-bs-toggle="modal"] {
 }
 
 .modal-book-cover {
+  aspect-ratio: 650 / 1000;
   width: 100%;
+  object-fit: cover;
+  object-position: right center;
   margin: 0 0 2em;
 }
 
@@ -395,6 +405,14 @@ button [data-bs-toggle="modal"] {
 
 .book-stats-item {
   font-weight: 600;
+}
+
+@media screen and (min-width: 550px) {
+  .modal-book-cover {
+    aspect-ratio: initial;
+    object-fit: initial;
+    object-position: initial;
+  }
 }
 
 /******************************************************************************
